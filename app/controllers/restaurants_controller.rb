@@ -16,25 +16,25 @@ class RestaurantsController < ApplicationController
     @restaurant = Restaurant.new
   end
 
-  def edit
-    @restaurant = Restaurant.find(params[:id])
-  end
+  # def edit
+  #   @restaurant = Restaurant.find(params[:id])
+  # end
 
   def show
     @restaurant = Restaurant.find(params[:id])
   end
 
-  def update
-    @restaurant = Restaurant.find(params[:id])
-    @restaurant.update(restaurant_params)
-    redirect_to restaurant_path(@restaurant)
-  end
+  # def update
+  #   @restaurant = Restaurant.find(params[:id])
+  #   @restaurant.update(restaurant_params)
+  #   redirect_to restaurant_path(@restaurant)
+  # end
 
-  def destroy
-    @restaurant = Restaurant.find(params[:id])
-    @restaurant.destroy
-    redirect_to restaurants_path notice: 'Restaurant was successfully destroyed.'
-  end
+  # def destroy
+  #   @restaurant = Restaurant.find(params[:id])
+  #   @restaurant.destroy
+  #   redirect_to restaurants_path notice: 'Restaurant was successfully destroyed.'
+  # end
 
   private
 
